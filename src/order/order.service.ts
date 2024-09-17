@@ -35,6 +35,6 @@ export class OrderService {
   }
 
   remove(id: number) {
-    return `This action removes a #${id} order`;
+    return this.ordersRepository.delete(id);
   }
 }
