@@ -16,11 +16,12 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         queue: 'inventory_queue',
         queueOptions: {
           durable: true ,
-          
+
         },
       },
     },
-  ]),],
+  ]),
+],
   controllers: [OrderController],
   providers: [OrderService],
 })
